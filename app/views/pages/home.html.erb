@@ -1,2 +1,130 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% content_for :meta_title, "LucAgathe" %>
+<% content_for :meta_description, "Mariage Agathe & Lucas " %>
+
+<!-- <div id="banner" class="banner-container" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4) 50%), url(<%= image_path "wheel.jpg" %>);" %>)""> -->
+ <!--  <div id="banner" class="banner-container" style="background-image: url(<%= image_path "tandem-noce.jpg" %>);" %> -->
+    <!-- <div id="banner" class="banner-container" style="background-image: url(<%= image_path "velomarie.jpg" %>);" %> -->
+
+
+<div id="banner" class="image-banner">
+  <%= image_tag "img-velo.png" %>
+
+  <h1>Mariage d'Agathe & Lucas </h1>
+  <!-- <p>Date, lieu</p> -->
+
+
+    <div class="container links-infos">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
+          </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-4">
+          <div class="card"><h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergements</a></h3>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="link-answer">
+              <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+      <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2>LES INFOS DU MARIAGE</h2>
+              <p><strong>SAMEDI 6 OCTOBRE</strong></p>
+              <p>Rendez-vous à ... à la mairie de ...</p>
+              <p>Vin d'honneur à partir de .... , suivi d'un dîner, puis enfin de la soirée </p>
+              <p>Rendez-vous au Château de Luponnas, 1457 route de Luponnas - 01540 Vonnas</p>
+              <br>
+              <p><strong>DIMANCHE 7 OCTOBRE</strong></p>
+              <p>Pour ceux qui le souhaitent, brunch à partir de 12h au Château de Luponnas </p>
+          </div>
+        </div>
+      </div>
+        <div class="modal fade bs-example-modal-lg2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h2>POUR VENIR</h2>
+                <p><strong>TRAIN</strong></p>
+                <p>Gare de Bourg-en-Bresse puis 25min de voiture jusqu'à Vonnas (22km)</p>
+                <p>Gare de Mâcon + 20min de voiture (20km)</p>
+                <br>
+                <p><strong>VOITURE</strong></p>
+                <p>Coordonnées GPS: 46.2316571, 4.977052</p>
+                <p>Depuis Paris, 4h </p>
+                <p>Depuis Lyon, 1h15</p>
+            </div>
+          </div>
+        </div>
+          <div class="modal fade bs-example-modal-lg3" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h2>HEBERGEMENT</h2>
+                  <p><strong>TRAIN</strong></p>
+                  <p><strong>VOITURE</strong></p>
+              </div>
+            </div>
+          </div>
+            <div class="modal fade bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+              <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h2>REPONSE</h2>
+                      <div class="contact-form">
+                        <form method="POST" action="https://formspree.io/agaloubert@hotmail.com">
+                          <input type="text" name="name" placeholder="Votre nom" class="form-control" required>
+                          <input type="email" name="email" placeholder="Votre email" class="form-control" required>
+                          <textarea name="body" rows="8" width="100%" placeholder="Vous serez au vin d'honneur? Au dîner? A la soirée? Au brunch? A la totale ?" class="form-control"></textarea>
+                          <br>
+                          <input type="hidden" name="_next" value="/">
+                          <center><input id="sweet-alert-demo" type="submit" value="Envoyer" class="btn btn-cadre"></center>
+                        </form>
+                      </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+</div>
+
+
+ <!--  <div class="container-homepage">
+    <div class="column1">
+      <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
+      </div>
+        <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
+        </div>
+          <div class="card"><h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergement</a></h3>
+          </div>
+    </div>
+
+    <div class="image">
+      <div class="illustration-container"> <%= image_tag "img-velo.png" %></div>
+    </div>
+
+    <div class="column3">
+      <div class=" card link-answer">
+        <h3 style="background-color: #F6C667; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
+      </div>
+    </div>
+  </div> -->
