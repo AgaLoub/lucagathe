@@ -1,14 +1,39 @@
+.entire-page {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+
 .container-homepage {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   padding: 0px 30px;
+  background-color: white;
+  // height: 100vh;
+  margin-bottom: 0px;
+  padding-top: 50px;
 }
 
 .image {
   flex-grow: 1;
   flex-shrink: 1;
+  text-align: center;
+}
+.image h1 {
+  color: black;
+  text-align: center;
+  font-size: 60px;
+  // margin-bottom: 30px;
+  margin-top: 40px;
+}
+.text-wedding {
+  text-align: center;
+  background-color: white;
+  // padding-top: 80px;
+  padding-bottom: 30px;
 }
 .image-banner {
   background-color: white;
@@ -17,6 +42,8 @@
   text-align: center;
   // padding-top: 320px;
   position: relative;
+  // height: 100vh;
+
 
 }
 .banner-container {
@@ -27,7 +54,6 @@
   background-repeat: no-repeat;
   overflow: hidden;
   padding-top: 0px;
-
 }
 
 // #illustration {
@@ -82,9 +108,31 @@
     font-size: 14px;
   }
 }
+.title p {
+  font-size: 18px;
+}
+.airbnb p :hover {
+  cursor: pointer;
+  color: #5294CE;
+}
+
+.italic p {
+  font-style: italic;
+  font-size: 13px;
+}
+.website {
+  font-size: 15px;
+  margin-top: -14px;
+  font-family: "Open Sans", "Helvetica", "sans-serif";
+}
+.website:hover {
+  cursor: pointer;
+  color: #5294CE;
+}
 
 .link-answer {
   position: relative;
+  margin-right: 20px;
 }
 
 .contact-form input {
@@ -93,6 +141,20 @@
   .contact-form textarea {
     margin-top: 10px;
   }
+.text-form p {
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+.text-form p a:hover {
+    color: #9B0000;
+    text-decoration: underline;
+    cursor: pointer;
+    }
 
 
 @media (max-width: 1000px) {

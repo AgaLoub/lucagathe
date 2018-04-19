@@ -1,45 +1,44 @@
 <% content_for :meta_title, "LucAgathe" %>
 <% content_for :meta_description, "Mariage Agathe & Lucas " %>
 
-<!-- <div id="banner" class="banner-container" style="background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4) 50%), url(<%= image_path "wheel.jpg" %>);" %>)""> -->
- <!--  <div id="banner" class="banner-container" style="background-image: url(<%= image_path "tandem-noce.jpg" %>);" %> -->
-    <!-- <div id="banner" class="banner-container" style="background-image: url(<%= image_path "velomarie.jpg" %>);" %> -->
 
 
-<div id="banner" class="image-banner">
-  <%= image_tag "img-velo.png" %>
-
-  <h1>Mariage d'Agathe & Lucas </h1>
-  <!-- <p>Date, lieu</p> -->
-
-
-    <div class="container links-infos">
-      <div class="row">
-        <div class="col-xs-12 col-sm-4">
-          <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-sm-4">
-          <div class="card"><h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergements</a></h3>
-          </div>
-        </div>
+<div class="entire-page"><div class="row">
+  <div class="container-homepage">
+    <div class="column1">
+      <div class="card"> <h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
       </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <div class="link-answer">
-              <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
-            </div>
-          </div>
+        <div class="card"> <h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
         </div>
+          <div class="card"><h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergements <br>& restaurants</a></h3>
+          </div>
+          <div class="card"><h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Notre liste</a></h3>
+          </div>
     </div>
+
+    <div class="image">
+      <div class="illustration-container"> <%= image_tag "img-velo.png" %>
+      </div>
+    </div>
+
+    <div class="column3">
+      <div class=" card link-answer">
+        <h3 style="background-color: #F6C667; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+  <div class="row text-wedding">
+    <h1>Mariage d'Agathe & Lucas </h1>
+    <h2>Samedi 6 octobre 2018, Vonnas</h2>
+  </div>
+</div>
+
+
+
 
 
       <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -47,13 +46,13 @@
           <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h2>LES INFOS DU MARIAGE</h2>
-              <p><strong>SAMEDI 6 OCTOBRE</strong></p>
-              <p>Rendez-vous à ... à la mairie de ...</p>
-              <p>Vin d'honneur à partir de .... , suivi d'un dîner, puis enfin de la soirée </p>
-              <p>Rendez-vous au Château de Luponnas, 1457 route de Luponnas - 01540 Vonnas</p>
+              <div class="title"><p><strong>SAMEDI 6 OCTOBRE</strong></p></div>
+              <p>Rendez-vous à <strong>16h à la mairie de Montmerle sur Saône </strong>, 35 Rue de Lyon, 01090 Montmerle-sur-Saône </p>
+              <p>La suite des festivités se déroulera au <strong>Château de Luponnas</strong>, 1457 route de Luponnas - 01540 Vonnas</p>
               <br>
-              <p><strong>DIMANCHE 7 OCTOBRE</strong></p>
-              <p>Pour ceux qui le souhaitent, brunch à partir de 12h au Château de Luponnas </p>
+              <div class="title"><p><strong>DIMANCHE 7 OCTOBRE</strong></p></div>
+              <p>Pour ceux qui le souhaitent, nous vous proposons de venir au brunch à partir de 12h au Château de Luponnas !</p>
+              <div class="italic"><p>Si vous venez le dimanche, merci de nous confirmer votre présence !</p></div>
           </div>
         </div>
       </div>
@@ -62,14 +61,19 @@
             <div class="modal-content">
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h2>POUR VENIR</h2>
-                <p><strong>TRAIN</strong></p>
-                <p>Gare de Bourg-en-Bresse puis 25min de voiture jusqu'à Vonnas (22km)</p>
-                <p>Gare de Mâcon + 20min de voiture (20km)</p>
+                <div class="title"><p><strong>EN TRAIN</strong></p></div>
+                <p><i class="fa fa-train"></i> <strong>Gare de Bourg-en-Bresse</strong> + 25min de voiture jusqu'à Vonnas (22km)</p>
+                <p><i class="fa fa-train"></i> <strong>Gare de Mâcon Loché TGV </strong>+ 20min de voiture (20km)</p>
+                <p>Service de location de voiture dans les 2 gares</p>
+
                 <br>
-                <p><strong>VOITURE</strong></p>
+                <div class="title"><p><strong>EN VOITURE</strong></p></div>
                 <p>Coordonnées GPS: 46.2316571, 4.977052</p>
-                <p>Depuis Paris, 4h </p>
-                <p>Depuis Lyon, 1h15</p>
+                <p><i class="fa fa-car"></i> Depuis Paris : 4h </p>
+                <p><i class="fa fa-car"></i> Depuis Lyon : 1h15</p>
+                <p><i class="fa fa-car"></i> Depuis Marseille : 4h</p>
+                <br>
+                <p><div class="website" onclick="window.open('http://www.luponnas.fr/Upload/Luponnas-plan-acces.pdf')">Plan d'accès détaillé</div></p>
             </div>
           </div>
         </div>
@@ -77,26 +81,108 @@
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h2>HEBERGEMENT</h2>
-                  <p><strong>TRAIN</strong></p>
-                  <p><strong>VOITURE</strong></p>
+                <h2>HEBERGEMENTS</h2>
+                <div class="title"><p><strong>CHAMBRES D'HÔTES</strong></p></div>
+                  <p><strong>Clévacances 3 épis - M. et Mme RAVIER</strong> <br>
+                    11, route de Laval - 01540 Vonnas <br>
+                    Tél : 04 74 50 09 73 <br>
+                    Mail : <a href="mailto:cpg.ravier@wanadoo.fr">cpg.ravier@wanadoo.fr</a> <br>
+
+                  <p><strong>Chambres d’hôtes - Mme MARTIN PEULET</strong> <br>
+                    Capacité : 4 personnes - 2 chambres <br>
+                    Les Haies - 01540 Vonnas <br>
+                    Tél : 04 74 50 10 56
+                  </p>
+
+                  <p><strong>Clévacances 3 clés - M. et Mme HABIGAND</strong> <br>
+                    Capacité : 2 personnes - 1 logement <br>
+                    54, imp. des Bouvreuils - 01540 Vonnas <br>
+                    Tél : 04 74 50 17 41
+                    <div class="website" onclick="window.open('http://www.leverdoyon.fr')">http://www.leverdoyon.fr </div> <br>
+                  </p>
+                  <br>
+
+                  <div class="title"><p><strong>HÔTELS</strong></p></div>
+                  <p><strong>Hôtel Georges Blanc *** et ****</strong> <br>
+                    Distance : 2 Km <br>
+                    Place du Marché - 01540 Vonnas <br>
+                    Tél : 04 74 50 90 90 <br>
+                    Mail : <a href="mailto:blanc@relaischateaux.com">blanc@relaischateaux.com</a> <br>
+                  </p>
+                  <p><strong>Hôtel de la Tour ***</strong> <br>
+                    Distance : 12 Km <br>
+                    Capacité : 35 chambres <br>
+                    35, Rue Barrit - 01400 Châtillon <br>
+                    Tél : 04 74 55 05 12 <br>
+                    Mail : <a href="mailto:info@hotel-latour.com">info@hotel-latour.com</a> <br>
+                    </p>
+                    <p><strong>Hotel La Sarrasine ***</strong>
+                      Distance : 10 Km <br>
+                      Capacité : 10 chambres <br>
+                      Le Logis Neuf - RN79 - 01310 Confrancon <br>
+                      Tél : 04 74 30 25 65 <br>
+                      Mail : <a href="mailto:sarras@free.fr">sarras@free.fr</a><br>
+                    </p>
+                    <p><strong>Bresse Saône ***</strong> <br>
+                      Distance : 14 Km <br>
+                      Capacité : 34 chambres <br>
+                      742, route de la Croix Verte <br>
+                      01750 Replonges <br>
+                      Tél : 03 85 31 00 10 <br>
+                      Mail : <a href="mailto:contact@bress-saone.f">contact@bress-saone.fr</a><br>
+                      <div class="website" onclick="window.open('www.bress-saone.fr')">www.bress-saone.fr </div>
+                    </p>
+                    <p><strong>Hotel Hostellerie Sarrasine ***</strong> <br>
+                       Distance : 14 Km <br>
+                       Capacité : 7 chambres <br>
+                       533 route de la Madeleine - 01750 Replonges <br>
+                       Tél : 03 85 31 02 41 <br>
+                    </p>
+                    <br>
+
+                    <div class="title airbnb" onclick="window.open('https://www.airbnb.fr/s/Vonnas--France/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJoZwp9Rxd80cRJZZm4tcarPo&query=Vonnas%2C%20France&allow_override%5B%5D=&checkin=2018-10-05&checkout=2018-10-07&s_tag=1enHWz0z')"><p><i class="fa fa-home"></i> <strong>AIRBNB</strong></p></div>
+
+                    <div class="title airbnb" onclick="window.open('https://www.booking.com/searchresults.fr.html?aid=397596&label=gog235jc-index-fr-XX-XX-unspec-fr-com-L%3Afr-O%3AosSx-B%3Achrome-N%3AXX-S%3Abo-U%3Ac-H%3As&sid=820915581546998b59980df3d709b211&sb=1&src=index&src_elem=sb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.fr.html%3Faid%3D397596%3Blabel%3Dgog235jc-index-fr-XX-XX-unspec-fr-com-L%253Afr-O%253AosSx-B%253Achrome-N%253AXX-S%253Abo-U%253Ac-H%253As%3Bsid%3D820915581546998b59980df3d709b211%3Bsb_price_type%3Dtotal%26%3B&ss=Vonnas%2C+Rh%C3%B4ne-Alpes%2C+France&checkin_monthday=5&checkin_month=10&checkin_year=2018&checkout_monthday=7&checkout_month=10&checkout_year=2018&group_adults=2&group_children=0&no_rooms=1&from_sf=1&ss_raw=vonnas&ac_position=0&ac_langcode=fr&dest_id=-1477793&dest_type=city&place_id_lat=46.21698&place_id_lon=4.99368&search_pageview_id=17427b218fed017e&search_selected=true&search_pageview_id=17427b218fed017e&ac_suggestion_list_length=2&ac_suggestion_theme_list_length=0')"><p><i class="fa fa-bed"></i> <strong>BOOKING</strong></p></div>
+
+                    <div class="title airbnb" onclick="window.open('https://www.gites-de-france.com/recherche/location-vacances-vonnas-01457.html')"><p><i class="fa fa-bath"></i> <strong>GÎTES</strong></p></div>
+                    <br>
+
+
+                    <div class="title"><p><strong>LES RESTOS</strong></p></div>
+                    <p><strong>Restaurant la Bergerie</strong> <br>
+                      Direction Bourg-en-Bresse <br>
+                      L’effondras 01310 Confrançon <br>
+                      Tél : 04 74 30 26 09 <br>
+                    </p>
+                    <p><strong>L’ancienne auberge de Georges Blanc</strong> <br>
+                      Place du Marché - Vonnas <br>
+                      Tél : 04 74 50 90 50 <br>
+                    </p>
+                    <p><strong>Restaurant de la Tour </strong> <br>
+                      35, Rue Barrit - 01400 Châtillon <br>
+                      Tél : 04 74 55 05 12 <br>
+                    </p>
               </div>
             </div>
           </div>
+
             <div class="modal fade bs-example-modal-lg4" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
               <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h2>REPONSE</h2>
                       <div class="contact-form">
-                        <form method="POST" action="https://formspree.io/agaloubert@hotmail.com">
+                        <form method="POST" action="https://formspree.io/mariage.agalucas@gmail.com">
                           <input type="text" name="name" placeholder="Votre nom" class="form-control" required>
                           <input type="email" name="email" placeholder="Votre email" class="form-control" required>
-                          <textarea name="body" rows="8" width="100%" placeholder="Vous serez au vin d'honneur? Au dîner? A la soirée? Au brunch? A la totale ?" class="form-control"></textarea>
+                          <textarea name="body" rows="8" width="100%" placeholder="Vous serez au vin d'honneur? Au dîner? A la soirée? Au brunch? A la totale ? Avec ou sans enfants?" class="form-control"></textarea>
                           <br>
                           <input type="hidden" name="_next" value="/">
                           <center><input id="sweet-alert-demo" type="submit" value="Envoyer" class="btn btn-cadre"></center>
                         </form>
+                      </div>
+                      <div class="text-form">
+                        <p>Vous pouvez aussi nous contacter directement par mail : <a href="mailto:mariage.agalucas@gmail.com">mariage.agalucas@gmail.com</a></p>
                       </div>
 
                 </div>
@@ -108,23 +194,3 @@
 </div>
 
 
- <!--  <div class="container-homepage">
-    <div class="column1">
-      <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
-      </div>
-        <div class="card"> <h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
-        </div>
-          <div class="card"><h3 style="background-color: #8F0017; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergement</a></h3>
-          </div>
-    </div>
-
-    <div class="image">
-      <div class="illustration-container"> <%= image_tag "img-velo.png" %></div>
-    </div>
-
-    <div class="column3">
-      <div class=" card link-answer">
-        <h3 style="background-color: #F6C667; padding: 10px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
-      </div>
-    </div>
-  </div> -->
