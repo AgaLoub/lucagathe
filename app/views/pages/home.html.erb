@@ -2,43 +2,38 @@
 <% content_for :meta_description, "Mariage Agathe & Lucas " %>
 
 
-
-<div class="entire-page"><div class="row">
-  <div class="container-homepage">
-    <div class="column1">
-      <div class="card"> <h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
-      </div>
-        <div class="card"> <h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
+<div class="entire-page">
+  <div class="row">
+    <div class="container-homepage">
+      <div class="column1">
+        <div class="card"> <h3 style="background-color: #9B1B1E; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg1" style="text-decoration: none; color: white; cursor: pointer;">Les infos du mariage</a></h3>
         </div>
-          <div class="card"><h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergements <br>& restaurants</a></h3>
+          <div class="card"> <h3 style="background-color: #9B1B1E; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg2" style="text-decoration: none; color: white; cursor: pointer;">Transports</a></h3>
           </div>
-          <div class="card"><h3 style="background-color: #8F0017; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Notre liste</a></h3>
+            <div class="card"><h3 style="background-color: #9B1B1E; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg3" style="text-decoration: none; color: white; cursor: pointer;">Hebergements <br>& restaurants</a></h3>
+            </div>
+              <div class="card"><h3 style="background-color: #9B1B1E; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Notre liste</a></h3>
+              </div>
+      </div>
+
+        <div class="image">
+          <div class="faire-part"> <%= image_tag "dessin.png" %>
           </div>
+        </div>
+
+          <div class="column3">
+            <div class=" card link-answer">
+              <h3 style="background-color: #E6BF00; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
+            </div>
+          </div>
+
     </div>
 
-    <div class="image">
-      <div class="illustration-container"> <%= image_tag "img-velo.png" %>
-      </div>
-    </div>
-
-    <div class="column3">
-      <div class=" card link-answer">
-        <h3 style="background-color: #F6C667; padding: 10px 40px;"><a type="button" data-toggle="modal" data-target=".bs-example-modal-lg4" style="text-decoration: none; color: white; cursor: pointer;">Nous répondre</a></h3>
-      </div>
-    </div>
-
-
+        <div class="row text-wedding">
+          <h2>Rendez-vous samedi 6 octobre 2018 !</h2>
+        </div>
   </div>
-</div>
-
-  <div class="row text-wedding">
-    <h1>Mariage d'Agathe & Lucas </h1>
-    <h2>Samedi 6 octobre 2018, Vonnas</h2>
-  </div>
-</div>
-
-
-
+ </div>
 
 
       <div class="modal fade bs-example-modal-lg1" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
@@ -47,12 +42,15 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             <h2>LES INFOS DU MARIAGE</h2>
               <div class="title"><p><strong>SAMEDI 6 OCTOBRE</strong></p></div>
-              <p>Rendez-vous à <strong>16h à la mairie de Montmerle sur Saône </strong>, 35 Rue de Lyon, 01090 Montmerle-sur-Saône </p>
+              <p>Rendez-vous à <strong>15h30 à la mairie de Montmerle sur Saône </strong>, 35 Rue de Lyon, 01090 Montmerle-sur-Saône </p>
               <p>La suite des festivités se déroulera au <strong>Château de Luponnas</strong>, 1457 route de Luponnas - 01540 Vonnas</p>
               <br>
               <div class="title"><p><strong>DIMANCHE 7 OCTOBRE</strong></p></div>
               <p>Pour ceux qui le souhaitent, nous vous proposons de venir au brunch à partir de 12h au Château de Luponnas !</p>
-              <div class="italic"><p>Si vous venez le dimanche, merci de nous confirmer votre présence !</p></div>
+              <div class="italic"><p>Si vous venez le dimanche, merci de nous confirmer votre présence ! </p></div>
+             <div class="yann"> <p>Un grand merci à Yann pour son superbe dessin ! <br> Vous pouvez retrouver le reste de ses créations sur son site: <a class="site" onclick="window.open('http://yanndamezin.fr/')">http://yanndamezin.fr/</a> </p></div>
+
+
           </div>
         </div>
       </div>
@@ -91,15 +89,47 @@
                   <p><strong>Chambres d’hôtes - Mme MARTIN PEULET</strong> <br>
                     Capacité : 4 personnes - 2 chambres <br>
                     Les Haies - 01540 Vonnas <br>
-                    Tél : 04 74 50 10 56
+                    Tél : 04 74 50 10 56 <br>
+                    Mail :  <a href="mailto:les-haies.vonnas@wanadoo.fr">les-haies.vonnas@wanadoo.fr</a> <br>
                   </p>
 
                   <p><strong>Clévacances 3 clés - M. et Mme HABIGAND</strong> <br>
                     Capacité : 2 personnes - 1 logement <br>
                     54, imp. des Bouvreuils - 01540 Vonnas <br>
                     Tél : 04 74 50 17 41
-                    <div class="website" onclick="window.open('http://www.leverdoyon.fr')">http://www.leverdoyon.fr </div> <br>
+                    <div class="website" onclick="window.open('http://www.leverdoyon.fr')">http://www.leverdoyon.fr </div>
                   </p>
+
+                  <p><strong>Clévacances 3 clés - Marie-Thérèse BLOUZARD</strong> <br>
+                    29 rue Chaynes Aimable, 01540 Vonnas <br>
+                    Tél : 04.74.50.06.26 ou 06.86.68.24.32<br>
+                    Mail: <a href="mailto:mtjo.blouzard@orange.fr">mtjo.blouzard@orange.fr</a> <br>
+                  </p>
+
+                  <p><strong>Gîte les Glycines - Mme et Mr CHANE Paulette et René</strong> <br>
+                    264 Avenue de la Gare, 01540 Vonnas <br>
+                    Tél : 04.74.42.98.55 ou 06.33.61.67.35<br>
+                    Mail: <a href="mailto:paulette.chane@orange.fr">paulette.chane@orange.fr</a> <br>
+                  </p>
+
+                  <p><strong>Chambre d'hôtes "Aux poulettes bressanes"- Mme MAIA Laura</strong> <br>
+                    128 chemin des Brosses, 01540 Vonnas <br>
+                    Tél : 06.66.16.45.86<br>
+                  </p>
+
+                  <p><strong>Gîte du Château de Béost - Mr et Mme DE GATELLIER</strong> <br>
+                    1961 route de Neuville les Dames, 01540 Vonnas <br>
+                    Tél : 04.74.24.78.96 <br>
+                    <div class="website" onclick="window.open('http://www.gites-de-france-ain.com/location-vacances-Vonnas-Chateau-De-Beost-01G457030.html)">Réservation en ligne </div>
+                  </p>
+
+                  <p><strong>Karine et Frédéric BOURGAULT</strong> <br>
+                    687 chemin d'Epeyssoles, 01540 Vonnas <br>
+                    Tél : 04.74.24.78.96 <br>
+                    Mail: <a href="mailto:contact@domaine-de-la-garde.fr">contact@domaine-de-la-garde.fr</a> <br>
+                    <div class="website" onclick="window.open('http://domaine-de-la-garde.fr/)">http://domaine-de-la-garde.fr/ </div> <br>
+                  </p>
+
                   <br>
 
                   <div class="title"><p><strong>HÔTELS</strong></p></div>
@@ -192,5 +222,6 @@
 
 
 </div>
+
 
 
